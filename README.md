@@ -25,8 +25,8 @@ Mobile view
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/cvtqx/recipe-page-design)
+- Live Site URL: [Github Pages](https://cvtqx.github.io/recipe-page-design/)
 
 
 
