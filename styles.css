@@ -34,6 +34,7 @@ html,
 body {
   height: 100%;
   color: var(--clr-wenge-brown);
+  margin: 0;
 }
 
 h1,
@@ -50,9 +51,37 @@ h2 {
   color: var(--clr-nutmeg);
 }
 
+.bold-text{
+    font-weight: var(--fw-600);
+}
+
+.recipe-container img{
+    width: 100%;
+    height: auto;
+}
+
+.recipe-container section{
+    padding: 1.5rem 1rem;
+}
+
 #preparation-time__header {
   color: var(--clr-dark-raspberry);
   font-weight: var(--fw-600);
+}
+
+#pink-box{
+    background-color: var(--clr-rosewhite);
+    padding: 1rem;
+    border-radius: 10px;
+    line-height: 200%;
+}
+
+#pink-box li::marker{
+    color: var(--clr-dark-raspberry);
+}
+
+#ingredients li::marker, #instructions li::marker {
+    color: var(--clr-nutmeg);
 }
 
 hr {
