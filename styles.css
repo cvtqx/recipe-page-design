@@ -40,7 +40,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
+  line-height: 200%;
 }
 
 h1,
@@ -50,7 +51,7 @@ h2:not(#preparation-time__header) {
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
   color: var(--clr-dark-charcoal);
 }
 
@@ -58,17 +59,17 @@ h2 {
   color: var(--clr-nutmeg);
 }
 
-.bold-text{
-    font-weight: var(--fw-600);
+.bold-text {
+  font-weight: var(--fw-600);
 }
 
-.recipe-container img{
-    width: 100%;
-    height: auto;
+.recipe-container img {
+  width: 100%;
+  height: auto;
 }
 
-.recipe-container section{
-    padding: 1.5rem 1rem;
+.recipe-container section {
+  padding: 1.5rem 1rem;
 }
 
 #preparation-time__header {
@@ -76,19 +77,20 @@ h2 {
   font-weight: var(--fw-600);
 }
 
-#pink-box{
-    background-color: var(--clr-rosewhite);
-    padding: 1rem;
-    border-radius: 10px;
-    line-height: 200%;
+#pink-box {
+  background-color: var(--clr-rosewhite);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-#pink-box li::marker{
-    color: var(--clr-dark-raspberry);
+#pink-box li::marker {
+  color: var(--clr-dark-raspberry);
 }
 
-#ingredients li::marker, #instructions li::marker, td {
-    color: var(--clr-nutmeg);
+#ingredients li::marker,
+#instructions li::marker,
+td {
+  color: var(--clr-nutmeg);
 }
 
 hr {
@@ -104,8 +106,8 @@ table {
   width: 100%;
 }
 
-tr{
-    height: 3rem;
+tr {
+  height: 3rem;
 }
 
 th {
@@ -114,12 +116,18 @@ th {
   padding-left: 2rem;
 }
 
-td{
-    font-weight: var(--fw-600);
+td {
+  font-weight: var(--fw-600);
 }
 
-th, td {
+th,
+td {
   border-bottom: 1px solid var(--clr-light-grey);
+}
+
+table tr:last-child th,
+table tr:last-child td {
+  border-bottom: none;
 }
 
 .attribution {
@@ -132,23 +140,44 @@ th, td {
   color: hsl(228, 45%, 44%);
 }
 
- @media (min-width: 380px){
+@media (min-width: 700px) {
+  body {
+    background-color: var(--clr-eggshell);
+  }
 
-    body{
-        background-color: var(--clr-eggshell);
-    }
-
-.recipe-container{
-    width: 50vw;
+  .recipe-container {
+    width: 80vw;
+    max-width: 802px;
     height: fit-content;
     background-color: var(--clr-white);
     margin-top: 5rem;
     margin-bottom: 5rem;
     padding: 2rem;
     border-radius: 10px;
+  }
+
+  .recipe-container img {
+    border-radius: 5px;
+  }
 }
 
-.recipe-container img{
+@media (min-width: 1440px) {
+  body {
+    background-color: var(--clr-eggshell);
+  }
+
+  .recipe-container {
+    width: 50vw;
+    max-width: 802px;
+    height: fit-content;
+    background-color: var(--clr-white);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .recipe-container img {
     border-radius: 5px;
+  }
 }
- }
